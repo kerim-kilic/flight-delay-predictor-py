@@ -7,3 +7,6 @@ RUN apt-get install python3-pip \
 
 ADD ./requirements.txt /home/requirements.txt
 RUN pip install -r /home/requirements.txt
+
+CMD ["/home/main.py"]
+ENTRYPOINT ["python3"]
