@@ -1,6 +1,6 @@
 from pyspark.sql import *
-from src.data_pipeline import *
-from src.data_split import *
+from data_processing.data_pipeline import *
+from data_processing.data_split import *
 
 # Create Spark session
 spark = SparkSession.builder \
